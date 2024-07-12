@@ -29,6 +29,7 @@ def is_enabled(value, default):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002178286178').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 
 API = environ.get("API", "32534ae73e9e730a54b530a3f0155efb78c1ec1f") # shortlink api
 URL = environ.get("URL", "publicearn.com") # shortlink domain without https://
